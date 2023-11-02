@@ -37,6 +37,7 @@
   </div>
 
   <div class="card-body mx-3">
+    <%= turbo_frame_tag "cats_list" do %>
     <div class="row py-2">
       <div class="col-4 mt-auto">
         <%= sort_link(@search, :name) %>
@@ -57,5 +58,6 @@
     <div class="d-flex justify-content-end mt-3">
       <%= paginate @cats %>
     </div>
+  <% end %>
   </div>
 </div>
