@@ -18,5 +18,5 @@ module ApplicationHelper
 end
 
 def turbo_stream_flash
-    turbo_stream.update "flash", partial: "flash"
+    turbo_stream.append "flashes", partial: "flash"
 end
